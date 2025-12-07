@@ -24,3 +24,13 @@ export interface ScoreBoardProps {
     color: string;
     textColor?: string;
 }
+
+export interface GameGridProps {
+  squares: (string | null)[];
+  onSquareClick: (i: number) => void;
+}
+
+export interface StatsPanelProps {
+  sessionStats: { X: number; O: number };
+  globalStats: { X: number; O: number };
+}
